@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { QRCodeModule } from 'angularx-qrcode';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -61,6 +63,7 @@ import { DialogQRCodeComponent } from './dialog-qr-code/dialog-qr-code.component
     MatCardModule,
     HttpClientModule,
     FirestoreModule,
+    QRCodeModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
